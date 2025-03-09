@@ -1,9 +1,8 @@
 package extractor.persistance.source;
 
 import java.util.Map;
-import java.util.Objects;
 
-public class JiraIssueSource {
+public class IssueSource {
 
     private String id;
     private Map<String, Object> fields;

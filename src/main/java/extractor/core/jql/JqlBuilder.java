@@ -1,4 +1,4 @@
-package extractor.core;
+package extractor.core.jql;
 
 import java.util.LinkedList;
 import java.util.List;
