@@ -7,7 +7,6 @@ import java.util.concurrent.ExecutionException;
 import com.atlassian.jira.rest.client.api.domain.Issue;
 
 import extractor.core.jql.JqlBuilder;
-import extractor.persistance.source.IssueSource;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
@@ -28,8 +27,5 @@ public class IssueSourceRepo {
         return SourceClient.build().getSearchClient().searchJql(JqlBuilder.build(projectKey, null, List.of())).get().getIssues();
     }
 
-    public List<IssueSource> findByProjectKeyAndUpdatedSince(String projectKey, ZonedDateTime updatedSince) {
-        return null;
-    }
 
 }
