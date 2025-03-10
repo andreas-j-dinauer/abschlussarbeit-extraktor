@@ -51,9 +51,4 @@ public class ProjectExtractor {
             throw new RuntimeException(e);
         }
     }
-
-    private boolean hasChanged() {
-        return false;
-    }
-
 }
